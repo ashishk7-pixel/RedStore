@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - Redstore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ProductsPage.html">Products</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="Cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <div class="about-main">
+        <div class="about-col-1">
+        <h1>About Us</h1>
+        <h2>Slay the day in style @ Redstore </h2>
+        <p>Scout through your favourite brands with latest technologies. Just click & be its proud owner, at the best
+            available price in the market. Come, help us help you to fly high with your new & improved game with high
+            quality sportsgear! <br>
+
+            Right from Racquets, Balls, Bats, Clubs to Shoes, Caps & other thousands of accessories, a wonderful
+            selection awaits you to take a pick from. Give your wishlist to us & we will get you what you want. <br>
+
+            Secure payment methods with seamless transactions & a commited helpline for all your queries. <br>
+
+            Blog in to learn about your game & give your juniors a tip or two. Ask us to help you select your product,
+            we will be glad to help you.</p>
+        </div>
+        <div class="about-col-2">
+            <img src="./images/about1.png" width="400px">
+
+
+        </div>
+    </div>
+
+    <!-------------------------------------------------------------------Footer------------------------------------------------------------>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png">
+                    <p>Our Purpose is to sustainably make the pleasure and benfits of sports accessible to the many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affilitae</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="Copyright">Copyright 2020 - Redstore</p>
+        </div>
+    </div>
+    <!-------------------------------------------------------------------js for toggle menu----------------------------------------------->
+    <script>
+        var menuitems = document.getElementById("menuitems")
+        menuitems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (menuitems.style.maxHeight == "0px") {
+                menuitems.style.maxHeight = "200px"
+            }
+            else {
+                menuitems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+
+</html>
